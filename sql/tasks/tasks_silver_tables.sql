@@ -26,5 +26,4 @@ CREATE OR REPLACE TASK task_load_silver_products
 AS
   CALL load_silver_products();
 
-
 ALTER TASK task_load_silver_customers RESUME;
