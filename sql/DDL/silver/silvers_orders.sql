@@ -1,4 +1,4 @@
--- SILVER_ORDERS
+-- Criação da tabela silver_orders
 CREATE TABLE IF NOT EXISTS silver_orders (
   order_id           NUMBER,
   customer_id        STRING,

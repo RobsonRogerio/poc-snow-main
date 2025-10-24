@@ -1,3 +1,4 @@
+-- Criação da tabela silver_orders_details
 CREATE TABLE IF NOT EXISTS silver_orders_details (
   order_id      NUMBER,
   product_id    NUMBER,

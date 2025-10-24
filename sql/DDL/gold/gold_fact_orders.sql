@@ -1,3 +1,4 @@
+-- Criação da tabela gold_fact_orders
 CREATE TABLE IF NOT EXISTS gold_fact_orders (
     order_id        NUMBER,
     order_date      TIMESTAMP_NTZ,

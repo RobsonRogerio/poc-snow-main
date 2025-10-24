@@ -1,4 +1,4 @@
--- SILVER_CUSTOMERS
+-- Criação da tabela silver_customers
 CREATE TABLE IF NOT EXISTS silver_customers (
   customer_id   STRING,
   company_name  STRING,
