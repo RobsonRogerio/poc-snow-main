@@ -12,7 +12,7 @@ SELECT
     CAST($1 AS VARIANT) as raw,                   -- ← CAST para VARIANT
     metadata$filename as filename,                     
     CURRENT_TIMESTAMP() as created_at                  
-FROM @FORMACAO.PUBLIC.NORTH/orders (FILE_FORMAT => 'PARQUET_FORMAT');
+FROM @FORMACAO.PUBLIC.NORTH/orders/ (FILE_FORMAT => FORMACAO.PUBLIC.PARQUET_FORMAT);
     RETURN 'Load Bronze Orders table successfully';
 END;
 $$;
