@@ -1,4 +1,4 @@
--- Test Customer Table
+-- Cria o procedimento para carregar dados na tabela silver_customers a partir da tabela bronze_customers
 CREATE OR REPLACE PROCEDURE load_silver_customers()
 RETURNS STRING
 LANGUAGE SQL

@@ -1,3 +1,4 @@
+-- Criação da tabela silver_products
 CREATE OR REPLACE TABLE silver_products (
   product_id         NUMBER,
   product_name       STRING,
