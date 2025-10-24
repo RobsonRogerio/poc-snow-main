@@ -1,3 +1,4 @@
+-- Cria a tabela bronze_customers para armazenar os dados brutos dos clientes
 CREATE TABLE IF NOT EXISTS bronze_customers (
     raw VARIANT,           -- JSON bruto como $1
     filename STRING,       -- Nome do arquivo
