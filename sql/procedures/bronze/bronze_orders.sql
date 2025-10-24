@@ -1,4 +1,4 @@
--- Test Customer Table
+-- Cria o procedimento para carregar dados na tabela bronze_orders a partir do stage de orders
 CREATE OR REPLACE PROCEDURE load_bronze_orders()
 RETURNS STRING
 LANGUAGE SQL
