@@ -25,6 +25,6 @@ from silver_orders o
 inner join silver_orders_details od     
     on o.order_id = od.order_id;
 
-    RETURN 'Load Gold Facto Orders table successfully';
+    RETURN 'Load Gold Fact Orders table successfully';
 END;
 $$;
