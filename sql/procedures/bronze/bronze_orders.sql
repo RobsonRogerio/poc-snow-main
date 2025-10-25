@@ -1,4 +1,4 @@
--- Cria o procedimento para carregar dados na tabela bronze_orders a partir do stage de orders
+-- Cria a procedure para carregar dados na tabela BRONZE_ORDERS
 CREATE OR REPLACE PROCEDURE load_bronze_orders()
 RETURNS STRING
 LANGUAGE SQL
