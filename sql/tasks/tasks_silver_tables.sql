@@ -1,4 +1,4 @@
--- Task 1
+-- Task 1: Criação da task para carregar a tabela silver_customers diariamente às 15:00 UTC
 CREATE OR REPLACE TASK task_load_silver_customers
   WAREHOUSE = COMPUTE_WH
   SCHEDULE = 'USING CRON 0 15 * * * UTC'
