@@ -1,29 +1,8 @@
 -- Task 1
-CREATE OR REPLACE TASK task_load_silver_customers
+CREATE OR REPLACE TASK task_load_gold_fact_orders
   WAREHOUSE = COMPUTE_WH
-  SCHEDULE = 'USING CRON 0 15 * * * UTC'
+  AFTER task_load_silver_products
 AS
-  CALL load_silver_customers();
+  CALL load_gold_fact_orders();
 
--- Task 2, depende da anterior
-CREATE OR REPLACE TASK task_load_silver_orders
-  WAREHOUSE = COMPUTE_WH
-  AFTER task_load_silver_customers
-AS
-  CALL load_silver_orders();
-
--- Task 3, depende da anterior
-CREATE OR REPLACE TASK task_load_silver_orders_details
-  WAREHOUSE = COMPUTE_WH
-  AFTER task_load_silver_orders
-AS
-  CALL load_silver_orders_details();
-
--- Task 4, depende da anterior
-CREATE OR REPLACE TASK task_load_silver_products
-  WAREHOUSE = COMPUTE_WH
-  AFTER task_load_silver_orders_details
-AS
-  CALL load_silver_products();
-
-ALTER TASK task_load_silver_customers RESUME;
+ALTER TASK task_load_gold_fact_orders RESUME;
