@@ -1,4 +1,4 @@
--- Test Customer Table
+-- Cria a procedure para carregar dados na tabela BRONZE_CUSTOMERS
 CREATE OR REPLACE PROCEDURE load_bronze_customers()
 RETURNS STRING
 LANGUAGE SQL
